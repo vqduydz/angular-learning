@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-learning';
 
-  name: string | undefined;
-  resetName() {
-    this.name = undefined;
-  }
   ngOnInit() {}
 }

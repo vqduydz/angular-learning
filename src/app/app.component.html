@@ -1,10 +1,13 @@
-<!-- ngModel - Data/Events/Two-way binding -->
+<!-- Routing -->
 <div>
-  <h2 class="lession">* ngModel - Data/Events/Two-way binding</h2>
-  <input type="text" [(ngModel)]="name" placeholder="Name" />
+  <h2 class="lession">*Routing</h2>
+  <p><a routerLink="/home">Home</a></p>
+  <p><a routerLink="/about">About</a></p>
   <p>
-    Result :<span class="text"> {{ name }}</span>
+    <a routerLink="/ng-model-binding">
+      1. ngModel - Data/Events/Two-way binding</a
+    >
   </p>
-  <button (click)="resetName()">Reset name</button>
   <hr />
 </div>
+<router-outlet />
