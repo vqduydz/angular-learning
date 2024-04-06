@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.component';
 import { IfComponent } from './if/if.component';
+import { ForComponent } from './for/for.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { IfComponent } from './if/if.component';
     AboutComponent,
     NgModelBindingComponent,
     IfComponent,
+    ForComponent,
+    SwitchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

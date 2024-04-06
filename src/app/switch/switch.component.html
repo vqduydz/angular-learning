@@ -1,0 +1,23 @@
+<div>
+  <h2 class="lession">*&#64;switch</h2>
+  <select (change)="onSelect($event)">
+    <option value="">Select user to login</option>
+    <option value="Admin">Admin</option>
+    <option value="Customer">Customer</option>
+  </select>
+
+  @switch (user) { @case ('Admin') {
+  <p>
+    Xin chào <span class="text">{{ user }}</span
+    >!
+  </p>
+  } @case ('Customer') {
+  <p>
+    Xin chào <span class="text">{{ user }}</span
+    >!
+  </p>
+  } @default {
+  <p>Chưa chọn user đăng nhập</p>
+  } }
+  <hr />
+</div>

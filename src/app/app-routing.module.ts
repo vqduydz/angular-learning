@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.component';
 import { IfComponent } from './if/if.component';
+import { ForComponent } from './for/for.component';
+import { SwitchComponent } from './switch/switch.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'ng-model-binding', component: NgModelBindingComponent },
   { path: 'if', component: IfComponent },
+  { path: 'for', component: ForComponent },
+  { path: 'switch', component: SwitchComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];

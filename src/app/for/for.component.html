@@ -1,0 +1,18 @@
+<div>
+  <h2 class="lession">*&#64;for</h2>
+
+  @for (fruit of fruits; track fruit.id; let id = $index;let isFirst =$first;let
+  isLast =$last;let isEven =$even;let isOdd =$odd;let count =$count) {
+  <p>
+    {{ fruit.id }}.
+    <span>
+      index : {{ id }} - check first : {{ isFirst }} - check last :
+      {{ isLast }} - check even : {{ isEven }} - check odd : {{ isOdd }} - Name
+      : {{ fruit.name }} - count (total) : {{ count }}
+    </span>
+  </p>
+  } @empty {
+  <p>Ko có qq gì cả .</p>
+  }
+  <hr />
+</div>
