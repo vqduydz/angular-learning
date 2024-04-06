@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.component';
+import { IfComponent } from './if/if.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.com
     HomeComponent,
     AboutComponent,
     NgModelBindingComponent,
+    IfComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

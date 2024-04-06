@@ -1,0 +1,24 @@
+<!-- @if -->
+<div>
+  <h2 class="lession">*&#64;if</h2>
+  <input type="number" [(ngModel)]="age" placeholder="Age" />
+
+  @if (!age) {
+  <p>
+    Bạn
+    <span class="text">chưa nhập</span> tuổi
+  </p>
+  } @else if (age > 18) {
+  <p>
+    Bạn<span class="text"> {{ age }}</span> tuổi và
+    <span class="text">đã đủ</span> tuổi kết hôn
+  </p>
+  } @else {
+  <p>
+    Bạn<span class="text"> {{ age }}</span> tuổi và
+    <span class="text">chưa đủ</span> tuổi kết hôn
+  </p>
+  }
+  <button (click)="resetAge()">Reset age</button>
+  <hr />
+</div>
