@@ -1,0 +1,13 @@
+<div>
+  <h2 class="lession">*Services</h2>
+
+  @if (!authService.isLoggedIn) {
+  <p class="text">Bạn chưa đăng nhập.</p>
+  } @else {
+  <p class="text">Welcome !</p>
+  }
+
+  <button (click)="login()">Login</button>
+  <button (click)="logout()">Logout</button>
+  <hr />
+</div>

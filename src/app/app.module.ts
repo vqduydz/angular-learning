@@ -13,6 +13,7 @@ import { ForComponent } from './for/for.component';
 import { SwitchComponent } from './switch/switch.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { HighLightDirective } from './Directives/high-light.directive';
+import { ServiceAuthComponent } from './service-auth/service-auth.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HighLightDirective } from './Directives/high-light.directive';
     SwitchComponent,
     DirectiveComponent,
     HighLightDirective,
+    ServiceAuthComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
