@@ -7,6 +7,7 @@ import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.com
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
 import { SwitchComponent } from './switch/switch.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'if', component: IfComponent },
   { path: 'for', component: ForComponent },
   { path: 'switch', component: SwitchComponent },
+  { path: 'directives', component: DirectiveComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];

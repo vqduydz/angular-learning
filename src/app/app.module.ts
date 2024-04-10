@@ -11,6 +11,8 @@ import { NgModelBindingComponent } from './ng-model-binding/ng-model-binding.com
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
 import { SwitchComponent } from './switch/switch.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { SwitchComponent } from './switch/switch.component';
     IfComponent,
     ForComponent,
     SwitchComponent,
+    DirectiveComponent,
+    HighLightDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
