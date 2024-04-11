@@ -1,0 +1,14 @@
+<div>
+  <h2 class="lession">*Reactive Form</h2>
+  <form [formGroup]="formData" (submit)="onSubmit()">
+    <input placeholder="user" type="text" formControlName="user" />
+
+    <input placeholder="password" type="password" formControlName="password" />
+
+    <br />
+    <button style="margin-top: 10px" type="submit" [disabled]="!formData.valid">
+      Login
+    </button>
+  </form>
+  <hr />
+</div>

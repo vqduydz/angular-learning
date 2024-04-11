@@ -16,5 +16,9 @@ export class CommonService {
     console.log(this.isLoggedIn);
   }
 
+  submitData(data: any) {
+    console.log('Data :', data);
+  }
+
   constructor() {}
 }

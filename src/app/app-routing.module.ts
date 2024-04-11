@@ -9,6 +9,7 @@ import { ForComponent } from './for/for.component';
 import { SwitchComponent } from './switch/switch.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { ServiceAuthComponent } from './service-auth/service-auth.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'switch', component: SwitchComponent },
   { path: 'directives', component: DirectiveComponent },
   { path: 'services', component: ServiceAuthComponent },
+  { path: 'reactiveform', component: ReactiveFormComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];

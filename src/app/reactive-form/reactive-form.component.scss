@@ -1,0 +1,14 @@
+.text {
+  color: blue;
+}
+
+.lession {
+  color: red;
+  text-decoration: underline;
+}
+
+input {
+  + input {
+    margin-left: 10px;
+  }
+}

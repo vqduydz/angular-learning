@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { ServiceAuthComponent } from './service-auth/service-auth.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,9 @@ import { ServiceAuthComponent } from './service-auth/service-auth.component';
     DirectiveComponent,
     HighLightDirective,
     ServiceAuthComponent,
+    ReactiveFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
