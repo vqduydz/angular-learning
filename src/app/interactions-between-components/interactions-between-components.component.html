@@ -1,0 +1,12 @@
+<div>
+  <h2 class="lession">*interactions between components</h2>
+  <h3>Parent component</h3>
+  @if (name) {
+  <p>Đã nhận evnet từ {{ name }}</p>
+  } @else {
+  <p>Lắng nghe event từ Child component</p>
+  }
+  <app-child name="Cu Tí" (eventFromChild)="reply($event)" />
+  <app-child name="Cu Tèo" (eventFromChild)="reply($event)" />
+  <hr />
+</div>

@@ -10,6 +10,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { ServiceAuthComponent } from './service-auth/service-auth.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { InteractionsBetweenComponentsComponent } from './interactions-between-components/interactions-between-components.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +23,10 @@ const routes: Routes = [
   { path: 'directives', component: DirectiveComponent },
   { path: 'services', component: ServiceAuthComponent },
   { path: 'reactiveform', component: ReactiveFormComponent },
+  {
+    path: 'interactionsbetweencomponents',
+    component: InteractionsBetweenComponentsComponent,
+  },
 
   { path: '**', component: PageNotFoundComponent },
 ];

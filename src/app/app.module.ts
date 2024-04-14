@@ -15,6 +15,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { ServiceAuthComponent } from './service-auth/service-auth.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { InteractionsBetweenComponentsComponent } from './interactions-between-components/interactions-between-components.component';
+import { ChildComponent } from './interactions-between-components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     HighLightDirective,
     ServiceAuthComponent,
     ReactiveFormComponent,
+    InteractionsBetweenComponentsComponent,
+    ChildComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
