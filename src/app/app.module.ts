@@ -17,6 +17,9 @@ import { ServiceAuthComponent } from './service-auth/service-auth.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { InteractionsBetweenComponentsComponent } from './interactions-between-components/interactions-between-components.component';
 import { ChildComponent } from './interactions-between-components/child/child.component';
+import { HttpMethodComponent } from './http-method/http-method.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateModelComponent } from './http-method/update-model/update-model.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +37,16 @@ import { ChildComponent } from './interactions-between-components/child/child.co
     ReactiveFormComponent,
     InteractionsBetweenComponentsComponent,
     ChildComponent,
+    HttpMethodComponent,
+    UpdateModelComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

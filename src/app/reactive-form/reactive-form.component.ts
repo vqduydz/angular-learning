@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { CommonService } from '../Services/common.service';
 
 @Component({

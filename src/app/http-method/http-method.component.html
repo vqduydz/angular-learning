@@ -1,0 +1,55 @@
+<div style="position: relative">
+  <h2 class="lession">*Http Method (CRUD-User)</h2>
+
+  <hr />
+  <h3>1. Post - Create</h3>
+  <div>
+    <form [formGroup]="formData" (submit)="createUser()">
+      <input placeholder="name" type="text" formControlName="name" />
+      <input
+        placeholder="password"
+        type="password"
+        formControlName="password"
+      />
+      <input placeholder="email" type="email" formControlName="email" />
+      <label style="margin-left: 5px"
+        >Active:<input
+          placeholder="active"
+          type="checkbox"
+          formControlName="active"
+      /></label>
+      <br />
+      <button
+        style="margin-top: 10px"
+        type="submit"
+        [disabled]="!formData.valid"
+      >
+        Create User
+      </button>
+    </form>
+  </div>
+  <h3>2. Get/Put/Delete - Read/Update/Delete</h3>
+  <div>
+    @for (user of users; track user.id; ) {
+    <p>
+      id: {{ user.id }}. <span> name: {{ user.name }} </span> - email:{{
+        user.email
+      }}
+      <button (click)="edit(user)">🖊️</button>
+      <button (click)="deleteUser(user.id)" style="margin-left: 2px">❌</button>
+    </p>
+    } @empty {
+    <p>Ko có qq gì cả .</p>
+    }
+  </div>
+  <hr />
+  @if (editModelOpen) {
+
+  <div class="ovelay">
+    <app-update-model
+      [currentUser]="currentUser"
+      (customEvent)="closeUpdateModel()"
+    />
+  </div>
+  }
+</div>

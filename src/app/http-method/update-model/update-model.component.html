@@ -1,0 +1,16 @@
+<div class="model">
+  <h3 style="margin: 0; text-align: center">Update model</h3>
+  <form [formGroup]="formData" (submit)="updateUser()">
+    <input
+      style="margin: 5px"
+      placeholder="name"
+      type="text"
+      formControlName="name"
+    />
+    <br />
+    <div class="action">
+      <button type="submit" [disabled]="!formData.valid">Update</button>
+      <button (click)="emitEvent()" type="button">Cancle</button>
+    </div>
+  </form>
+</div>
